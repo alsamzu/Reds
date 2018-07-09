@@ -4,3 +4,11 @@
 #drop{
     background: white;
 }
+h1{
+font-weight: bolder;
+
+}
+#read{
+    text-decoration: none;
+    color: red;
+}
