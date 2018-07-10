@@ -46,3 +46,12 @@ font-weight: bold;
     background: red;
 
 }
+.card-body{
+    height: 150px;
+    min-width: 225px;
+    margin-right: 10px;
+    padding: 0;
+    overflow: hidden;
+
+}
+
