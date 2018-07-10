@@ -10,6 +10,11 @@ body{
 h3{
 font-weight: bold;
 
+
+}
+#picksheader{
+font-weight: bold;
+    color: red;
 }
 #read{
     text-decoration: none;
@@ -24,4 +29,15 @@ font-weight: bold;
 }
 #bookmark{
     color: red;
+}
+#calender{
+    border: 1px solid red;
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    background: red;
+
 }
