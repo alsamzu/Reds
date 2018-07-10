@@ -1,14 +1,27 @@
+body{
+   font-family: 'Raleway', sans-serif;
+}
 #search{
     color: black;
 }
 #drop{
     background: white;
 }
-h2{
+h3{
 font-weight: bold;
 
 }
 #read{
     text-decoration: none;
+    color: red;
+}
+#cardHeader{
+    color: red;
+    font-weight: bold;
+}
+#globe{
+    color: #00bfa5;
+}
+#bookmark{
     color: red;
 }
