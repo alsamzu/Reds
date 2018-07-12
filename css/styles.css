@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+    background: #fafafa;
 }
 
 #search {
@@ -56,20 +57,6 @@ h6 {
     background: red;
 
 }
-
-/*Other Css*/
-
-/*
-    DEMO STYLE
-*/
-
-body {
-
-    background: #fafafa;
-}
-
-
-
 a,
 a:hover,
 a:focus {
@@ -152,7 +139,7 @@ a:focus {
 ----------------------------------------------------- */
 
 #content {
-    padding: 20px;
+/*   padding: 10px;*/
     min-height: 100vh;
     transition: all 0.3s;
 
