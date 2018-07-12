@@ -203,6 +203,7 @@ a.article, a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+
 }
 
 #sidebarCollapse {
@@ -281,8 +282,14 @@ a.article, a.article:hover {
     overflow: hidden;
 
 }
+#cards{
+overflow-x: scroll;}
 #carouselExampleSlidesOnly{
     width: 100vw;
+
+}
+#content{
+    overflow: hidden;
 }
 
 
