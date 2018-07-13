@@ -13,14 +13,10 @@ body {
 
 h3 {
     font-weight: bold;
-
-
 }
 
 h6 {
     font-weight: bold;
-
-
 }
 
 #picksheader {
@@ -55,8 +51,8 @@ h6 {
     padding-right: 3px;
     color: white;
     background: red;
-
 }
+
 a,
 a:hover,
 a:focus {
@@ -86,6 +82,7 @@ a:focus {
     margin: 40px 0;
 }
 
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -111,17 +108,14 @@ a:focus {
     transform: rotateY(100deg);
 }
 
-
 #sidebar ul.components {
     padding: 20px 0;
-
 }
-#prof{
+
+#prof {
     border-top: 1px solid #d32f2f;
     border-bottom: 1px solid #ff8a80;
 }
-
-
 
 #sidebar ul li a {
     padding: 10px;
@@ -131,18 +125,17 @@ a:focus {
 
 #sidebar ul li a :hover {
     color: #red;
-
 }
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
 
 #content {
-/*   padding: 10px;*/
+    /*   padding: 10px;*/
     min-height: 100vh;
     transition: all 0.3s;
-
 }
 
 #sidebarCollapse {
@@ -172,7 +165,6 @@ a:focus {
 #sidebarCollapse span:last-of-type {
     transform: rotate(-45deg) translate(1px, -1px);
 }
-
 
 #sidebarCollapse.active span {
     transform: none;
@@ -213,8 +205,8 @@ a:focus {
     #sidebarCollapse.active span:last-of-type {
         transform: rotate(-45deg) translate(1px, -1px);
     }
-
 }
+
 
 /*Custom css*/
 
@@ -224,7 +216,6 @@ a:focus {
     margin-right: 10px;
     padding: 0;
     overflow: hidden;
-
 }
 
 #cards {
@@ -233,9 +224,27 @@ a:focus {
 
 #carouselExampleSlidesOnly {
     width: 100vw;
-
 }
 
 #content {
     overflow: hidden;
+}
+
+
+/*======== CUSTOM CAROUSEL BUTTONS by Victor ===============*/
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 5px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #869791;
 }

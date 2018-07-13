@@ -7,18 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="css/styles.css">
+
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.css">
     <!--Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <!--======== Owl ============== -->
-    <!--    <link rel='stylesheet' href='http://d33wubrfki0l68.cloudfront.net/bundles/d29267a2a869a1ae87e6438c8ffebdadb11b3b14.css' />-->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css' />
+    <!--======== Owl CAROUSEL============== -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css" />
 
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/styles.css">
 
     <!--    Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -436,18 +437,18 @@
                     $(this).toggleClass('active');
                 });
             });
-
         </script>
 
 
         <!--    CAROUSEL -->
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js'></script>
         <script>
             $(document).ready(function() {
                 $('.owl-carousel').owlCarousel({
                     items: 1,
                     loop: true,
                     margin: 10,
+                    dots: true,
                     autoplay: true,
                     autoplayTimeout: 5000,
                     autoplayHoverPause: false,
@@ -456,7 +457,6 @@
                     //                    animateOut: 'fadeOut', 
                 });
             })
-
         </script>
 
     </div>
