@@ -3,6 +3,28 @@ body {
     background: #fafafa;
 }
 
+
+/*======== THEME COLORS ================*/
+
+.colorMainHeaders {
+    text-decoration-color: #FF0000;
+}
+
+.colorArticleHeaders {
+    text-decoration-color: #111111;
+}
+
+.colorBodyText {
+    text-decoration-color: #333333;
+}
+
+.colorBackground {
+    text-decoration-color: #FFFFFF;
+}
+
+
+/*======== END OF THEME COLORS ========*/
+
 #search {
     color: black;
 }
@@ -67,6 +89,7 @@ a:focus {
     border: none;
     border-radius: 0;
     width: 100vw;
+    z-index: 99999
 }
 
 .navbar-btn {
@@ -97,15 +120,25 @@ a:focus {
     min-width: 250px;
     max-width: 250px;
     background: #fff;
+    position: fixed;
+    /*    Make hidden by default */
+    left: -250px;
+    top: 60px;
     color: #000;
     font-weight: bold;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
+    /* top layer */
+    z-index: 9999;
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    /* Remove the left hidden on sidebar active */
+    left: 0;
+    /*
+    margin-left: 0px;
     transform: rotateY(100deg);
+*/
 }
 
 #sidebar ul.components {
@@ -128,6 +161,41 @@ a:focus {
 }
 
 
+/* ==== SOME OVERLAY FOR SIDE MENU=====*/
+
+.overlay {
+    display: none;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    opacity: 0;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* display .overlay when it has the .active class */
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    /* top right corner of the sidebar */
+    top: 10px;
+    right: 10px;
+}
+
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -136,6 +204,8 @@ a:focus {
     /*   padding: 10px;*/
     min-height: 100vh;
     transition: all 0.3s;
+    width: 100%;
+    position: absolute;
 }
 
 #sidebarCollapse {
