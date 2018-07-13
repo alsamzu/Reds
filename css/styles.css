@@ -231,6 +231,25 @@ a:focus {
 }
 
 
+/* ======= MORE CUSTOM CARDS ===============*/
+
+.card-bodyxx {
+    height: 150px;
+    min-width: 225px;
+    margin: 5px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 3px 18px #888888;
+    opacity: 0.7;
+    /*    box-sizing: content-box;*/
+}
+
+#cardsxx {
+    overflow-x: scroll;
+}
+
+
 /*======== CUSTOM CAROUSEL BUTTONS by Victor ===============*/
 
 .owl-theme .owl-dots .owl-dot span {
