@@ -375,14 +375,12 @@ a:focus {
 }
 
 #cards {
-
     overflow-x: scroll;
-
-
 }
+
  ::-webkit-scrollbar {
-      display: none;
-   }
+    display: none;
+}
 
 #carouselExampleSlidesOnly {
     width: 100vw;
@@ -422,5 +420,5 @@ a:focus {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #869791;
+    background: #FF0000;
 }
