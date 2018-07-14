@@ -1,6 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background: #fafafa;
+      background: #fafafa;
+
 }
 
 
@@ -62,6 +63,7 @@ h6 {
 #picksheader {
     font-weight: bold;
     color: red;
+    font-size: 14px;
 }
 
 #read {
@@ -74,9 +76,7 @@ h6 {
     font-weight: bold;
 }
 
-#globe {
-    color: #00bfa5;
-}
+
 
 #bookmark {
     color: red;
@@ -181,7 +181,6 @@ a:focus {
 
 /*========= SEARCH BUTTON =======================*/
 
-
 /* https://codepen.io/anon/pen/djYRqe    */
 
 #myInput {
@@ -214,7 +213,7 @@ a:focus {
     display: block;
 }
 
-#myInput:focus~.collapse #fade {
+#myInput:focus ~ .collapse #fade {
     opacity: 0;
     background-color: #880000;
 }
@@ -244,7 +243,6 @@ a:focus {
 
 
 /*========= END SEARCH BUTTON =======================*/
-
 
 /* ==== SOME OVERLAY FOR SIDE MENU=====*/
 
@@ -374,15 +372,113 @@ a:focus {
     overflow: hidden;
 }
 
+#picks  {
+    padding: .3rem;
+    background: #fff;
+
+}
+#recent{
+    padding: .3rem;
+}
+/*=============CUSTOM CARD CSS BY ZULFA==============*/
+
+.cardbody {
+    padding-right: .1rem;
+}
+
+.cardmain {
+    width: 10rem;
+    height: 6.5rem;
+    border-radius: 6px;
+    margin-right: 5px;
+    position: relative;
+    padding: 1.5rem .5rem 5rem;
+    overflow: hidden;
+    font-size: 12px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .20);
+    border: solid 2px rgba(0, 0, 0, .04);
+}
+
+.cardmain * {
+    z-index: 5;
+    position: relative;
+}
+
+
+#fas {
+     position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 1.2rem;
+    padding-left: .2rem;
+    color: #E22028;
+
+
+}
+#fass {
+     position: absolute;
+    top: 2px;
+    left: 3px;
+    font-size: 1.2rem;
+/*    padding-left: .2rem;*/
+    color: #13C4A4;
+
+
+}
+
+
+.cardmain h3 {
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 1
+}
+
+.cardmain p {
+    line-height: 1;
+    font-size: .75rem;
+    margin: 0;
+}
+
+.cardmain.wht,
+.cardmain.wht h3 {
+    color: #fff
+}
+
+.cardmain .img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    z-index: 1
+}
+
+.cardmain .img-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+    width: 100%;
+    height: 100%
+}
+
+
+/*=============END OF CUSTOM CARD CSS BY ZULFA==============*/
+
 #cards {
 
     overflow-x: scroll;
 
 
+
 }
- ::-webkit-scrollbar {
-      display: none;
-   }
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 #carouselExampleSlidesOnly {
     width: 100vw;
@@ -395,12 +491,13 @@ a:focus {
 
 /* ======= MORE CUSTOM CARDS ===============*/
 
-
 /*==== Cards on the most-read section ======*/
 
+/*
 .card {
     box-shadow: 5px 3px 18px #888888;
 }
+*/
 
 #most-read .card {
     margin-bottom: 10px;
@@ -412,7 +509,7 @@ a:focus {
 .owl-theme .owl-dots .owl-dot span {
     width: 40px;
     height: 5px;
-    margin: 5px 7px;
+   margin: 5px 7px;
     background: #D6D6D6;
     display: block;
     -webkit-backface-visibility: visible;
