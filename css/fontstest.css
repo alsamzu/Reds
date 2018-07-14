@@ -70,3 +70,85 @@ h6 {
     font-size: 12px;
     font-weight: normal;
 }
+
+h1,
+.h1 {
+    font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+    font-size: 2rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+    font-size: 1rem;
+}
+
+
+/* ===== PHONE  ===== */
+
+@media (max-width: 576px) {
+    h1,
+    .h1 {
+        /* font-size: 2.5rem;*/
+        font-size: 2em;
+    }
+    h2,
+    .h2 {
+        /*        font-size: 2rem;*/
+        font-size: 1.625em;
+    }
+    h3,
+    .h3 {
+        /*        font-size: 1.75rem;*/
+        font-size: 1.375em;
+    }
+    h4,
+    .h4 {
+        /*        font-size: 1.5rem;*/
+        font-size: 1.125em;
+    }
+    h5,
+    .h5 {
+        font-size: 1rem;
+    }
+    h6,
+    .h6 {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}

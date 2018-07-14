@@ -504,7 +504,18 @@ a:focus {
     width: 40px;
     height: 5px;
     margin: 5px 7px;
-    background: #D6D6D6;
+    background: #FFFFFF;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 0px;
+}
+
+#slide-main .owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 5px;
+    margin: 5px 7px;
+    background: #FF0000;
     display: block;
     -webkit-backface-visibility: visible;
     transition: opacity 200ms ease;
