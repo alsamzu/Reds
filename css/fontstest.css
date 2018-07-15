@@ -53,16 +53,17 @@ p {
 }
 
 h1,
+h2 {
+    font-weight: bold;
+}
+
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    /*
     font-family: SF-Pro;
-    font-weight: bold;
-    font-size: 18px;
-*/
 }
 
 .card-body {

@@ -1,5 +1,5 @@
     body {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'SF-Pro', 'Raleway', sans-serif;
         background: #fafafa;
     }
     /*======== GENERAL RESOURCES==============*/
@@ -55,22 +55,22 @@
     
     #picksheader {
         font-weight: bold;
-        color: red;
-        font-size: 14px;
+        color: #FF0000;
+        font-size: 18px;
     }
     
     #read {
         text-decoration: none;
-        color: red;
+        color: FF0000;
     }
     
     #cardHeader {
-        color: red;
+        color: #FF0000;
         font-weight: bold;
     }
     
     #bookmark {
-        color: red;
+        color: #FF0000;
     }
     
     a,
@@ -153,7 +153,7 @@
     }
     
     #sidebar ul li a :hover {
-        color: #red;
+        color: #FF0000;
     }
     /*========= SEARCH BUTTON =======================*/
     /* https://codepen.io/anon/pen/djYRqe    */
@@ -424,6 +424,11 @@
         height: 100%
     }
     /*=============END OF CUSTOM CARD CSS BY ZULFA==============*/
+    /*============== SCROLLING CLASS ==================*/
+    
+    .section-scroll {
+        overflow-x: scroll;
+    }
     
     #cards {
         overflow-x: scroll;
@@ -483,23 +488,24 @@
     /* ======== MAIN SLIDER STYLING ============ */
     
     #slider-main h1 {
-        font-weight: 600;
+        font-weight: bold;
         color: #FFFFFF;
         font: 4rem;
     }
     
     #slider-main h4 {
-        font-weight: 600;
+        font-weight: lighter;
         color: #FFFFFF;
     }
     
     #slider-main {
-        font-weight: bold;
+        font-weight: normal;
         color: #FF0000;
     }
     
     #slider-main .owl-stage-outer {
         position: relative;
+        box-sizing: content-box;
         z-index: 10;
     }
     
@@ -509,6 +515,11 @@
         margin-top: -55px;
     }
     
+    #slider-main .owl-stage {
+        position: relative;
+        z-index: 99;
+    }
+    
     #slider-main .owl-theme .owl-dots .owl-dot.active span,
     #slider-main .owl-theme .owl-dots .owl-dot:hover span {
         background: #FF0000;
@@ -516,8 +527,7 @@
     
     #slider-main slider-item-content {
         background-size: 100% 300%;
-        background-size: fill;
-        background-position: center;
+        background-size: contain background-position: center;
     }
     
     #jumbo {
