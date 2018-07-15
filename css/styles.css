@@ -13,10 +13,59 @@
         margin: 20px 0px;
         text-decoration-style: double;
     }
+    /* =============== CATEGORIES  ==========*/
     
     #categories table {
         /*===== make the section to center =====*/
         margin: auto;
+    }
+    /* Remove all the background */
+    
+    #category-family .card-img,
+    #category-education .card-img,
+    #category-law .card-img,
+    #category-science .card-img,
+    #category-rights .card-img,
+    #category-culture .card-img,
+    #category-technology .card-img,
+    #category-business .card-img,
+    #category-environment .card-img {
+        /*        background: white;*/
+        content: url(/img/whiteimg.png);
+        /*        background-color: white;*/
+    }
+    /* Setting the colors */
+    
+    #category-family * {
+        color: #DF4B7A;
+    }
+    
+    #category-education * {
+        color: #638894;
+    }
+    
+    #category-law * {
+        color: #D65D00;
+    }
+    
+    #category-science * {
+        color: #AF5EB5;
+    }
+    
+    #category-rights * {
+        color: #E22028;
+    }
+    
+    #category-environment * {
+        color: #6DB230;
+    }
+    
+    #category-technology * {
+        color: #2D7CB8
+    }
+    
+    #category-culture * {
+        color: 13c4a4;
     }
     /*======== THEME COLORS ================*/
     
@@ -443,11 +492,10 @@
     }
     /* ======= MORE CUSTOM CARDS ===============*/
     /*==== Cards on the most-read section ======*/
-    /*
-.card {
-    box-shadow: 5px 3px 18px #888888;
-}
-*/
+    
+    .card {
+        box-shadow: 5px 3px 18px #888888;
+    }
     
     #most-read .card {
         margin-bottom: 10px;
