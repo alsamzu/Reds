@@ -1,587 +1,656 @@
-    body {
-        font-family: 'SF-Pro', 'Raleway', sans-serif;
-        background: #fafafa;
-    }
-    /*======== GENERAL RESOURCES==============*/
-    
-    .section {
-        margin: 40px 10px;
-    }
-    
-    .section-title {
-        color: #FF0000;
-        margin: 20px 0px;
-        text-decoration-style: double;
-    }
-    /* =============== CATEGORIES  ==========*/
-    
-    #categories table {
-        /*===== make the section to center =====*/
-        margin: auto;
-    }
-    /* Remove all the background */
-    
-    #category-family .card-img,
-    #category-education .card-img,
-    #category-law .card-img,
-    #category-science .card-img,
-    #category-rights .card-img,
-    #category-culture .card-img,
-    #category-technology .card-img,
-    #category-business .card-img,
-    #category-environment .card-img {
-        /*        background: white;*/
-        content: url(../img/whiteimg.png);
-        /*        background-color: white;*/
-    }
-    /* Setting the colors */
-    
-    #category-family * {
-        color: #DF4B7A;
-    }
-    
-    #category-education * {
-        color: #638894;
-    }
-    
-    #category-law * {
-        color: #D65D00;
-    }
-    
-    #category-science * {
-        color: #AF5EB5;
-    }
-    
-    #category-rights * {
-        color: #E22028;
-    }
-    
-    #category-environment * {
-        color: #6DB230;
-    }
-    
-    #category-technology * {
-        color: #2D7CB8
-    }
-    
-    #category-culture * {
-        color: 13c4a4;
-    }
-    /*======== THEME COLORS ================*/
-    
-    .colorMainHeaders {
-        text-decoration-color: #FF0000;
-    }
-    
-    .colorArticleHeaders {
-        text-decoration-color: #111111;
-    }
-    
-    .colorBodyText {
-        text-decoration-color: #333333;
-    }
-    
-    .colorBackground {
-        text-decoration-color: #FFFFFF;
-    }
-    /*======== END OF THEME COLORS ========*/
-    
-    #search {
-        color: black;
-    }
-    
-    #drop {
-        background: white;
-    }
-    
-    h3 {
-        font-weight: bold;
-    }
-    
-    h6 {
-        font-weight: bold;
-    }
-    
-    #picksheader {
-        font-weight: bold;
-        color: #FF0000;
-        font-size: 18px;
-    }
-    
-    #read {
-        text-decoration: none;
-        color: FF0000;
-    }
-    
-    #cardHeader {
-        color: #FF0000;
-        font-weight: bold;
-    }
-    
-    #bookmark {
-        color: #FF0000;
-    }
-    
-    a,
-    a:hover,
-    a:focus {
-        color: inherit;
-        text-decoration: none;
-        transition: all 0.3s;
-    }
-    
-    .navbar {
-        padding: 10px 10px;
-        background: #fff;
-        border: none;
-        border-radius: 0;
-        z-index: 99999
-    }
-    /*width: 100vw;*/
-    
-    .navbar-btn {
-        box-shadow: none;
-        outline: none !important;
-        border: none;
-    }
-    
-    .line {
-        width: 100%;
-        height: 1px;
-        border-bottom: 1px dashed #ddd;
-        margin: 40px 0;
-    }
-    /* ---------------------------------------------------
+body {
+    font-family: 'SF-Pro', 'Raleway', sans-serif;
+    /*    background: #f0f0f0;*/
+}
+
+
+/*======== GENERAL RESOURCES==============*/
+
+.section {
+    margin: 40px 10px;
+}
+
+.section-title {
+    color: #FF0000;
+    margin: 20px 0px;
+    text-decoration-style: double;
+}
+
+
+/* =============== CATEGORIES  ==========*/
+
+#categories table {
+    /*===== make the section to center =====*/
+    margin: auto;
+}
+
+
+/* Remove all the background */
+
+#category-family .card-img,
+#category-education .card-img,
+#category-law .card-img,
+#category-science .card-img,
+#category-rights .card-img,
+#category-culture .card-img,
+#category-technology .card-img,
+#category-business .card-img,
+#category-environment .card-img {
+    /*        background: white;*/
+    content: url(../img/whiteimg.png);
+    /*        background-color: white;*/
+}
+
+
+/* Setting the colors */
+
+#category-family * {
+    color: #DF4B7A;
+}
+
+#category-education * {
+    color: #638894;
+}
+
+#category-law * {
+    color: #D65D00;
+}
+
+#category-science * {
+    color: #AF5EB5;
+}
+
+#category-rights * {
+    color: #E22028;
+}
+
+#category-environment * {
+    color: #6DB230;
+}
+
+#category-technology * {
+    color: #2D7CB8
+}
+
+#category-culture * {
+    color: 13c4a4;
+}
+
+
+/*======== THEME COLORS ================*/
+
+.colorMainHeaders {
+    text-decoration-color: #FF0000;
+}
+
+.colorArticleHeaders {
+    text-decoration-color: #111111;
+}
+
+.colorBodyText {
+    text-decoration-color: #333333;
+}
+
+.colorBackground {
+    text-decoration-color: #FFFFFF;
+}
+
+
+/*======== END OF THEME COLORS ========*/
+
+#search {
+    color: black;
+}
+
+#drop {
+    background: white;
+}
+
+h3 {
+    /*    font-weight: bold;*/
+}
+
+h6 {
+    /*    font-weight: bold;*/
+}
+
+#picksheader {
+    font-weight: bold;
+    color: #FF0000;
+    font-size: 18px;
+}
+
+#read {
+    text-decoration: none;
+    color: FF0000;
+}
+
+#cardHeader {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+#bookmark {
+    color: #FF0000;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 10px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    z-index: 99999;
+    padding: 0;
+}
+
+
+/*    width: 100vw;*/
+
+
+/*
+background: #fff;
+border: none;
+border-radius: 0;
+z-index: 99999
+
+*/
+
+
+/*width: 100vw;*/
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    background-color: white;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+/* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-    
-    .wrapper {
-        display: flex;
-        align-items: stretch;
-        perspective: 1500px;
-    }
-    
-    #sidebar {
-        min-width: 250px;
-        max-width: 250px;
-        background: #fff;
-        position: fixed;
-        /*    Make hidden by default */
-        left: -250px;
-        top: 60px;
-        color: #000;
-        font-weight: bold;
-        transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
-        transform-origin: bottom left;
-        /* top layer */
-        z-index: 9999;
-    }
-    
-    #sidebar.active {
-        /* Remove the left hidden on sidebar active */
-        left: 0;
-        /*
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    perspective: 1500px;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #fff;
+    position: fixed;
+    /*    Make hidden by default */
+    left: -250px;
+    top: 60px;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: bottom left;
+    /* top layer */
+    z-index: 9999;
+}
+
+#sidebar.active {
+    /* Remove the left hidden on sidebar active */
+    left: 0;
+    /*
     margin-left: 0px;
     transform: rotateY(100deg);
 */
-    }
-    
-    #sidebar ul.components {
-        padding: 20px 0;
-    }
-    
-    #prof {
-        border-top: 1px solid #d32f2f;
-        border-bottom: 1px solid #ff8a80;
-    }
-    
-    #sidebar ul li a {
-        padding: 10px;
-        font-size: 1.1em;
-        display: block;
-    }
-    
-    #sidebar ul li a :hover {
-        color: #FF0000;
-    }
-    /*========= SEARCH BUTTON =======================*/
-    /* https://codepen.io/anon/pen/djYRqe    */
-    
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#prof {
+    border-top: 1px solid #d32f2f;
+    border-bottom: 1px solid #ff8a80;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a :hover {
+    color: #FF0000;
+}
+
+
+/*========= SEARCH BUTTON =======================*/
+
+
+/* https://codepen.io/anon/pen/djYRqe    */
+
+#myInput {
+    border: none;
+    height: 100%;
+    border-radius: 0;
+    color: #EDEDED;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    display: block;
+}
+
+@media(max-width:600px) {
     #myInput {
-        border: none;
-        height: 100%;
-        border-radius: 0;
-        color: #EDEDED;
-        width: 0%;
-        transition: width 0.3s ease-in-out;
-        position: absolute;
-        z-index: -1;
-        right: 0;
-        display: block;
+        left: 0;
     }
-    
-    @media(max-width:600px) {
-        #myInput {
-            left: 0;
-        }
-    }
-    
-    #myInput:focus {
-        background: #FF0000;
-        width: 150%;
-        transition: width 0.5s ease-in-out;
-        border: none;
-        box-shadow: none;
-        z-index: 3;
-        right: 0;
-        display: block;
-    }
-    
-    #myInput:focus~.collapse #fade {
-        opacity: 0;
-        background-color: #880000;
-    }
-    
-    #fade {
-        opacity: 1;
-        transition: all 0.5s ease;
-    }
-    
-    #search {
-        position: absolute;
-        right: 0;
-        z-index: 100;
-    }
-    
-    .glyphicon-search {
-        background-color: position: absolute;
-        margin-left: 20px;
-        z-index: 6;
-        font-size: 2em;
-        cursor: pointer;
-        padding-top: 0px;
-        color: #EDEDED;
-        display: block;
-        float: right;
-    }
-    /*========= END SEARCH BUTTON =======================*/
-    /* ==== SOME OVERLAY FOR SIDE MENU=====*/
-    
-    .overlay {
-        display: flex;
-        position: fixed;
-        /* full screen */
-        width: 100vw;
-        height: 100%;
-        /* transparent black */
-        background: rgba(0, 0, 0, 0.7);
-        /* middle layer, i.e. appears below the sidebar */
-        z-index: 998;
-        opacity: 0;
-        /* animate the transition */
-        transition: all 0.5s ease-in-out;
-    }
-    /* display .overlay when it has the .active class */
-    
-    .overlay.active {
-        display: block;
-        opacity: 0.7;
-    }
-    
-    #dismiss {
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        /* top right corner of the sidebar */
-        top: 10px;
-        right: 10px;
-    }
-    /* ---------------------------------------------------
+}
+
+#myInput:focus {
+    background: #FF0000;
+    width: 150%;
+    transition: width 0.5s ease-in-out;
+    border: none;
+    box-shadow: none;
+    z-index: 3;
+    right: 0;
+    display: block;
+}
+
+#myInput:focus~.collapse #fade {
+    opacity: 0;
+    background-color: #880000;
+}
+
+#fade {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+#search {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+}
+
+.glyphicon-search {
+    background-color: position: absolute;
+    margin-left: 20px;
+    z-index: 6;
+    font-size: 2em;
+    cursor: pointer;
+    padding-top: 0px;
+    color: #EDEDED;
+    display: block;
+    float: right;
+}
+
+
+/*========= END SEARCH BUTTON =======================*/
+
+
+/* ==== SOME OVERLAY FOR SIDE MENU=====*/
+
+.overlay {
+    display: flex;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100%;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    opacity: 0;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* display .overlay when it has the .active class */
+
+.overlay.active {
+    display: block;
+    opacity: 0.7;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    /* top right corner of the sidebar */
+    top: 10px;
+    right: 10px;
+}
+
+
+/* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
-    
-    #content {
-        /*   padding: 10px;*/
-        min-height: 100vh;
-        transition: all 0.3s;
-        width: 100%;
-        position: absolute;
+
+#content {
+    /*   padding: 10px;*/
+    min-height: 100vh;
+    transition: all 0.3s;
+    width: 100%;
+    position: absolute;
+    margin-top: 45px;
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    /*    background: #f5f5f5;*/
+}
+
+#sidebarCollapse span {
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: #555;
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    transition-delay: 0.2s;
+}
+
+#sidebarCollapse span:first-of-type {
+    width: 100%;
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+#sidebarCollapse span:nth-of-type(2) {
+    width: 80%;
+    opacity: 0;
+}
+
+#sidebarCollapse span:last-of-type {
+    width: 70%;
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+#sidebarCollapse.active span {
+    transform: none;
+    width: 100%;
+    opacity: 1;
+    margin: 5px auto;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 1768px) {
+    #sidebar {
+        margin-left: -250px;
+        transform: rotateY(90deg);
     }
-    
-    #sidebarCollapse {
-        width: 40px;
-        height: 40px;
-        background: #f5f5f5;
-    }
-    
-    #sidebarCollapse span {
-        width: 100%;
-        height: 2px;
-        display: block;
-        background: #555;
-        transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
-        transition-delay: 0.2s;
-    }
-    
-    #sidebarCollapse span:first-of-type {
-        width: 100%;
-        transform: rotate(45deg) translate(2px, 2px);
-    }
-    
-    #sidebarCollapse span:nth-of-type(2) {
-        width: 80%;
-        opacity: 0;
-    }
-    
-    #sidebarCollapse span:last-of-type {
-        width: 70%;
-        transform: rotate(-45deg) translate(1px, -1px);
-    }
-    
-    #sidebarCollapse.active span {
+    #sidebar.active {
+        margin-left: 0;
         transform: none;
-        width: 100%;
+    }
+    #sidebarCollapse span:first-of-type,
+    #sidebarCollapse span:nth-of-type(2),
+    #sidebarCollapse span:last-of-type {
+        transform: none;
         opacity: 1;
         margin: 5px auto;
     }
-    /* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-    
-    @media (max-width: 1768px) {
-        #sidebar {
-            margin-left: -250px;
-            transform: rotateY(90deg);
-        }
-        #sidebar.active {
-            margin-left: 0;
-            transform: none;
-        }
-        #sidebarCollapse span:first-of-type,
-        #sidebarCollapse span:nth-of-type(2),
-        #sidebarCollapse span:last-of-type {
-            transform: none;
-            opacity: 1;
-            margin: 5px auto;
-        }
-        #sidebarCollapse.active span {
-            margin: 0 auto;
-        }
-        #sidebarCollapse.active span:first-of-type {
-            transform: rotate(45deg) translate(2px, 2px);
-        }
-        #sidebarCollapse.active span:nth-of-type(2) {
-            opacity: 0;
-        }
-        #sidebarCollapse.active span:last-of-type {
-            transform: rotate(-45deg) translate(1px, -1px);
-        }
+    #sidebarCollapse.active span {
+        margin: 0 auto;
     }
-    /*Custom css*/
-    
-    #picks .card-body,
-    #recent .card-body {
-        height: 150px;
-        min-width: 225px;
-        margin-right: 10px;
-        padding: 0;
-        overflow: hidden;
+    #sidebarCollapse.active span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
     }
-    
-    #picks {
-        padding: .3rem;
-        background: #fff;
+    #sidebarCollapse.active span:nth-of-type(2) {
+        opacity: 0;
     }
-    
-    #recent {
-        padding: .3rem;
+    #sidebarCollapse.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
     }
-    /*=============CUSTOM CARD CSS BY ZULFA==============*/
-    
-    .cardbody {
-        padding-right: .1rem;
-    }
-    
-    .cardmain {
-        width: 10rem;
-        height: 6.5rem;
-        border-radius: 6px;
-        margin-right: 5px;
-        position: relative;
-        padding: 1.5rem .5rem 5rem;
-        overflow: hidden;
-        font-size: 12px;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, .20);
-        border: solid 2px rgba(0, 0, 0, .04);
-    }
-    
-    .cardmain * {
-        z-index: 5;
-        position: relative;
-    }
-    
-    #fas {
-        position: absolute;
-        top: 3px;
-        right: 3px;
-        font-size: 1.2rem;
-        padding-left: .2rem;
-        color: #E22028;
-    }
-    
-    #fass {
-        position: absolute;
-        top: 2px;
-        left: 3px;
-        font-size: 1.2rem;
-        /*    padding-left: .2rem;*/
-        color: #13C4A4;
-    }
-    
-    .cardmain h3 {
-        font-weight: 700;
-        font-size: .8rem;
-        line-height: 1
-    }
-    
-    .cardmain p {
-        line-height: 1;
-        font-size: .75rem;
-        margin: 0;
-    }
-    
-    .cardmain.wht,
-    .cardmain.wht h3 {
-        color: #fff
-    }
-    
-    .cardmain .img-wrap {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: cover !important;
-        z-index: 1
-    }
-    
-    .cardmain .img-wrap::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, .5);
-        z-index: 2;
-        width: 100%;
-        height: 100%
-    }
-    /*=============END OF CUSTOM CARD CSS BY ZULFA==============*/
-    /*============== SCROLLING CLASS ==================*/
-    
-    .section-scroll {
-        overflow-x: scroll;
-    }
-    
-    #cards {
-        overflow-x: scroll;
-    }
-    
-     ::-webkit-scrollbar {
-        display: none;
-    }
-    
-    #content {
-        overflow: hidden;
-    }
-    /* ======= MORE CUSTOM CARDS ===============*/
-    /*==== Cards on the most-read section ======*/
-    
-    .card {
-        box-shadow: 5px 3px 18px #888888;
-    }
-    
-    #most-read .card {
-        margin-bottom: 10px;
-    }
-    /*======== CUSTOM CAROUSEL BUTTONS by Victor ===============*/
-    
-    .owl-theme .owl-dots .owl-dot span {
-        width: 40px;
-        height: 5px;
-        margin: 5px 7px;
-        background: #D6D6D6;
-        display: block;
-        -webkit-backface-visibility: visible;
-        transition: opacity 200ms ease;
-        border-radius: 0px;
-    }
-    
-    .owl-theme .owl-dots .owl-dot.active span,
-    .owl-theme .owl-dots .owl-dot:hover span {
-        background: #FF0000;
-    }
-    
-    #slider-main .owl-theme .owl-dots .owl-dot span {
-        width: 40px;
-        height: 3px;
-        margin: 5px 7px;
-        background: #FFFFFF;
-        display: block;
-        -webkit-backface-visibility: visible;
-        transition: opacity 200ms ease;
-        border-radius: 8px;
-    }
-    /*
+}
+
+
+/*Custom css*/
+
+#picks .card-body,
+#recent .card-body {
+    height: 150px;
+    min-width: 225px;
+    margin-right: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#picks {
+    padding: .3rem;
+    background: #fff;
+}
+
+#recent {
+    padding: .3rem;
+}
+
+
+/*=============CUSTOM CARD CSS BY ZULFA==============*/
+
+.cardbody {
+    padding-right: .1rem;
+}
+
+.cardmain {
+    width: 10rem;
+    height: 6.5rem;
+    border-radius: 6px;
+    margin-right: 5px;
+    position: relative;
+    padding: 1.5rem .5rem 5rem;
+    overflow: hidden;
+    font-size: 12px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .20);
+    border: solid 2px rgba(0, 0, 0, .04);
+}
+
+.cardmain * {
+    z-index: 5;
+    position: relative;
+}
+
+#fas {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 1.2rem;
+    padding-left: .2rem;
+    color: #E22028;
+}
+
+#fass {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    font-size: 1.2rem;
+    /*    padding-left: .2rem;*/
+    color: #13C4A4;
+}
+
+.cardmain h3 {
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 1
+}
+
+.cardmain p {
+    line-height: 1;
+    font-size: .75rem;
+    margin: 0;
+}
+
+.cardmain.wht,
+.cardmain.wht h3 {
+    color: #fff
+}
+
+.cardmain .img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    z-index: 1
+}
+
+.cardmain .img-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+    width: 100%;
+    height: 100%
+}
+
+
+/*=============END OF CUSTOM CARD CSS BY ZULFA==============*/
+
+
+/*============== SCROLLING CLASS ==================*/
+
+.section-scroll {
+    overflow-x: scroll;
+}
+
+#cards {
+    overflow-x: scroll;
+}
+
+ ::-webkit-scrollbar {
+    display: none;
+}
+
+#content {
+    overflow: hidden;
+}
+
+
+/* ======= MORE CUSTOM CARDS ===============*/
+
+
+/*==== Cards on the most-read section ======*/
+
+.card {
+    box-shadow: 5px 3px 18px #888888;
+}
+
+#most-read .card {
+    margin-bottom: 10px;
+}
+
+
+/*======== CUSTOM CAROUSEL BUTTONS by Victor ===============*/
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 5px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #FF0000;
+}
+
+#slider-main .owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 3px;
+    margin: 5px 7px;
+    background: #FFFFFF;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 8px;
+}
+
+#slider-main .jumbotron {
+    border-radius: 0;
+}
+
+
+/*
     .owl-dots {
         top: -20px;
     } 
 */
-    /* ======== MAIN SLIDER STYLING ============ */
-    
-    #slider-main h1 {
-        font-weight: bold;
-        color: #FFFFFF;
-        font: 4rem;
-    }
-    
-    #slider-main h4 {
-        font-weight: lighter;
-        color: #FFFFFF;
-    }
-    
-    #slider-main {
-        font-weight: normal;
-        color: #FF0000;
-    }
-    
-    #slider-main .owl-stage-outer {
-        position: relative;
-        box-sizing: content-box;
-        z-index: 10;
-    }
-    
-    #slider-main .owl-dots {
-        position: relative;
-        z-index: 99;
-        margin-top: -55px;
-    }
-    
-    #slider-main .owl-stage {
-        position: relative;
-        z-index: 99;
-    }
-    
-    #slider-main .owl-theme .owl-dots .owl-dot.active span,
-    #slider-main .owl-theme .owl-dots .owl-dot:hover span {
-        background: #FF0000;
-    }
-    
-    #slider-main slider-item-content {
-        background-size: 100% 300%;
-        background-size: contain background-position: center;
-    }
-    
-    #jumbo {
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+
+
+/* ======== MAIN SLIDER STYLING ============ */
+
+#slider-main h1 {
+    font-weight: bold;
+    color: #FFFFFF;
+    font: 4rem;
+}
+
+#slider-main h4 {
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+#slider-main {
+    font-weight: normal;
+    color: #FF0000;
+    margin-top: 0.4rem;
+}
+
+#slider-main .owl-stage-outer {
+    /*        position: relative;*/
+    box-sizing: content-box;
+    z-index: 10;
+}
+
+#slider-main .owl-dots {
+    position: relative;
+    z-index: 99;
+    margin-top: -55px;
+}
+
+#slider-main .owl-stage {
+    position: relative;
+    z-index: 99;
+}
+
+#slider-main .owl-theme .owl-dots .owl-dot.active span,
+#slider-main .owl-theme .owl-dots .owl-dot:hover span {
+    background: #FF0000;
+}
+
+#slider-main slider-item-content {
+    background-size: 100% 300%;
+    background-size: contain background-position: center;
+}
+
+#jumbo {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
