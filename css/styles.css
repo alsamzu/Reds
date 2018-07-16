@@ -1,6 +1,7 @@
     body {
         font-family: 'SF-Pro', 'Raleway', sans-serif;
-        background: #fafafa;
+        background: #f0f0f0;
+
     }
     /*======== GENERAL RESOURCES==============*/
     
@@ -131,18 +132,21 @@
     }
     
     .navbar {
-        padding: 15px 10px;
+/*        padding: 15px 10px;*/
         background: #fff;
-        border: none;
-        border-radius: 0;
+/*        border: none;*/
+/*        border-radius: 0;*/
         width: 100vw;
-        z-index: 99999
+        z-index: 99999;
+        padding: 0;
+
     }
-    
+
     .navbar-btn {
         box-shadow: none;
         outline: none !important;
         border: none;
+
     }
     
     .line {
@@ -489,6 +493,7 @@
     
     #content {
         overflow: hidden;
+
     }
     /* ======= MORE CUSTOM CARDS ===============*/
     /*==== Cards on the most-read section ======*/
@@ -549,10 +554,11 @@
     #slider-main {
         font-weight: normal;
         color: #FF0000;
+        margin-top: 0.4rem;
     }
     
     #slider-main .owl-stage-outer {
-        position: relative;
+/*        position: relative;*/
         box-sizing: content-box;
         z-index: 10;
     }
