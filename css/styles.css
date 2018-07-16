@@ -7,7 +7,7 @@ body {
 /*======== GENERAL RESOURCES==============*/
 
 .section {
-    margin: 40px 10px;
+    margin: 30px 10px;
 }
 
 .section-title {
@@ -77,6 +77,24 @@ body {
 }
 
 
+/*======== LOAD MORE SECTION ===========*/
+
+#load-more {
+    color: red;
+    text-align: center;
+}
+
+
+/*======== END OF LOAD MORE SECTION ===========*/
+
+
+/*======= More-in-family =========*/
+
+#more-in-family .card {
+    margin-bottom: 10px;
+}
+
+
 /*======== THEME COLORS ================*/
 
 .colorMainHeaders {
@@ -97,10 +115,6 @@ body {
 
 
 /*======== END OF THEME COLORS ========*/
-
-#search {
-    color: black;
-}
 
 #drop {
     background: white;
@@ -283,8 +297,8 @@ z-index: 99999
 
 #search {
     position: absolute;
-    right: 0;
     z-index: 100;
+    color: black;
 }
 
 .glyphicon-search {
@@ -562,6 +576,19 @@ z-index: 99999
     margin-bottom: 10px;
 }
 
+.card-body h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 12px;
+}
+
+.card-body a {
+    color: #FF0000;
+}
+
 
 /*======== CUSTOM CAROUSEL BUTTONS by Victor ===============*/
 
@@ -654,3 +681,55 @@ z-index: 99999
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
+
+/*================ SEARCH MODAL ===================*/
+
+
+/*
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-dialog {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-backdrop {
+    background-color: #fff;
+    opacity: 1!important;
+    border: 10px solid rgba(136, 136, 136, .4);
+}
+
+.modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body form {
+    margin: 0 auto;
+    float: none;
+    width: 300px;
+}
+
+.modal-content .close {
+    opacity: 1;
+    font-size: 30px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: none;
+}
+
+================END SEARCH MODAL===================*/

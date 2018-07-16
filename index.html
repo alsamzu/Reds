@@ -42,8 +42,8 @@
         </div>
         <div class="col-2 pb-4 mr-2">
             <!-- Search Icon-->
-            <a href="#" id="search">
-                <i class="fa fa-search"></i>
+            <a href="#" id="search" data-toggle="modal" data-target="#exampleModal">
+                <i class="fa fa-1x fa-search"></i>
             </a>
             <!-- Search icon End-->
         </div>
@@ -59,29 +59,27 @@
             <!-- Dropdown-->
             <div class="btn-group  float-right">
                 <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="drop">
-   <img src="img/eng.jpeg" width="25" height="25" alt="">
-    EN
-  </button>
+                    <img src="img/eng.jpeg" width="25" height="25" alt="">EN </button>
                 <div class="dropdown-menu pull-left">
                     <a class="dropdown-item" href="#">English
-    <img src="img/eng.jpeg" width="20" height="20" alt="">
-    </a>
+                        <img src="img/eng.jpeg" width="20" height="20" alt="">
+                    </a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">French
-    <img src="img/france.png" width="20" height="20" alt="">
-    </a>
+                        <img src="img/france.png" width="20" height="20" alt="">
+                    </a>
 
                 </div>
             </div>
-
         </div>
-
-
-
     </nav>
-    <!--                    End of Navbar-->
+
+    <!-- End of Navbar-->
+
+
     <div class="wrapper">
-        <!-- SIDEBAR SECTION -->
+
+        <!-- ================ SIDEBAR SECTION ===============-->
         <nav id="sidebar">
 
             <ul class="list-unstyled components">
@@ -135,17 +133,17 @@
 
         </nav>
 
+
+        <!--================ SECTION SEARCH MODAL ============ -->
+
+
+
         <!-- Dark Overlay element -->
         <div class="overlay"></div>
 
         <!-- Page Content Holder -->
         <div id="content" class="container-fluid">
-
-
-
             <!--========== MAIN SLIDER SECTION ======================= -->
-
-
             <div class="row expanded text-left testimonials color-bgprimary-2" id="slider-main">
                 <!--            <div class="column large-12">-->
                 <div class=" column small-12 large-8 owl-carousel owl-theme common_padding jumbotron" style="padding:0px">
@@ -184,7 +182,62 @@
             </div>
 
 
+            <!--============== SEARCH Modal ============================== -->
+            <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
+                        </div>
+                        <div class="modal-body">
+
+                            <h1>Search</h1>
+                            <form class="navbar-form " role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--            ====================== ANOTHER MODAL ====================-->
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+
+                                <h1>Search</h1>
+                                <form class="navbar-form " role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            ====================== END OF ANOTHER MODAL ====================-->
 
             <!--============== OUR PICKS SECTION ==========-->
             <div class="row section " id="picks">
@@ -312,7 +365,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="align-middle text-center">
-                                                <span class="fa fa-3x fa-user-o"></span>
+                                                <span class="fa fa-2x fa-user-o"></span>
                                                 <h4 class="card-title text-center m-1">Family</h4>
                                             </td>
                                         </tr>
@@ -331,7 +384,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="align-middle text-center">
-                                                <span class="fa fa-3x fa-user-o"></span>
+                                                <span class="fa fa-2x fa-user-o"></span>
                                                 <h4 class="card-title text-center m-1">Environment</h4>
                                             </td>
                                         </tr>
@@ -349,7 +402,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="align-middle text-center">
-                                                <span class="fa fa-3x fa-user-o"></span>
+                                                <span class="fa fa-2x fa-user-o"></span>
                                                 <h4 class="card-title text-center m-1">Education</h4>
                                             </td>
                                         </tr>
@@ -368,7 +421,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="align-middle text-center">
-                                                <span class="fa fa-3x fa-user-o"></span>
+                                                <span class="fa fa-2x fa-user-o"></span>
                                                 <h4 class="card-title text-center m-1">Family</h4>
                                             </td>
                                         </tr>
@@ -386,7 +439,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="align-middle text-center">
-                                                <span class="fa fa-3x fa-user-o"></span>
+                                                <span class="fa fa-2x fa-user-o"></span>
                                                 <h4 class="card-title text-center m-1">Science</h4>
                                             </td>
                                         </tr>
@@ -409,11 +462,11 @@
                         <div class="card bg-dark text-white">
                             <img class="card-img" src="img/camera.jpg" alt="Card image">
                             <div class="card-img-overlay">
-                                <table style="height: 100%;">
+                                <table style="height: 80%;">
                                     <tbody>
                                         <tr>
                                             <td class="align-middle">
-                                                <h4 class="card-title text-left">Child Abuse and its Consequences</h4>
+                                                <h5 class="card-title text-left">Child Abuse and its Consequences</h5>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -428,7 +481,7 @@
                         <div class="card bg-dark text-white" style="height:100%;">
                             <!--                            <img class="card-img" src="img/bk.jpeg" alt="Card image">-->
                             <div class="card-img-overlay">
-                                <table style="height: 100%;">
+                                <table style="height: 80%;">
                                     <tbody>
                                         <tr>
                                             <td class="align-middle">
@@ -447,7 +500,7 @@
                         <div class="card bg-dark text-white">
                             <img class="card-img" src="img/camera.jpg" alt="Card image">
                             <div class="card-img-overlay">
-                                <table style="height: 100%;">
+                                <table style="height: 80%;">
                                     <tbody>
                                         <tr>
                                             <td class="align-middle">
@@ -466,11 +519,11 @@
                         <div class="card bg-dark text-white">
                             <img class="card-img" src="img/camera.jpg" alt="Card image">
                             <div class="card-img-overlay">
-                                <table style="height: 100%;">
+                                <table style="height: 80%;">
                                     <tbody>
                                         <tr>
                                             <td class="align-middle">
-                                                <h4 class="card-title text-left">Child Abuse and its Consequences</h4>
+                                                <h5 class="card-title text-left">Child Abuse and its Consequences</h5>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -486,6 +539,62 @@
             </div>
 
 
+            <!-- =========== More in family ==========-->
+            <div class="section" id="more-in-family">
+                <h3 class="section-title">More in family</h3>
+                <div class="row">
+                    <!--==== Card 1 in More in Family ======-->
+                    <div class="col-sm-6 col-md-4">
+                        <!--                        <div class="card" style="min-width: 18rem;">-->
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top img-responsive" src="./img/pic2.jpg" alt="Card image cap" style="height:150px">
+                            <div class="card-body">
+                                <h4 class="card-title">The family organisation in Swaziland</h4>
+                                <p class="card-text" style="font-size:12px;">Birth control is how you prevent a pregnancy before it begins. Birth control can work really well and be easy to use</p>
+
+                                <a href="#">Read more</a>
+                                <span class="fa fa-ellipsis-v fa-1x" style="float:right"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==== Card 2 in More in Family ======-->
+                    <div class="col-sm-6 col-md-4">
+                        <!--                        <div class="card" style="min-width: 18rem;">-->
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top img-responsive" src="./img/pic2.jpg" alt="Card image cap" style="height:150px">
+                            <div class="card-body">
+                                <h4 class="card-title">The family organisation in Swaziland</h4>
+                                <p class="card-text" style="font-size:12px;">Birth control is how you prevent a pregnancy before it begins. Birth control can work really well and be easy to use</p>
+
+                                <a href="#">Read more</a>
+                                <span class="fa fa-ellipsis-v fa-1x" style="float:right"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==== Card 3 in More in Family ======-->
+                    <div class="col-sm-6 col-md-4">
+                        <!--                        <div class="card" style="min-width: 18rem;">-->
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top img-responsive" src="./img/pic2.jpg" alt="Card image cap" style="height:150px">
+                            <div class="card-body">
+                                <h4 class="card-title">The family organisation in Swaziland</h4>
+                                <p class="card-text" style="font-size:12px;">Birth control is how you prevent a pregnancy before it begins. Birth control can work really well and be easy to use</p>
+
+                                <a class="load-more" href="#">Read more</a>
+                                <span class="fa fa-ellipsis-v fa-1x" style="float:right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more section" id="load-more">
+                    <span class="fa fa-1x fa-ellipsis-h load-more"></span>
+                    <h3 class="load-more">Load more</h3>
+
+                </div>
+            </div>
 
 
             <!--======== SOCIAL MEDIA SECTION ==========-->
@@ -493,20 +602,20 @@
                 <h3 class="section-title">Follow Us</h3>
                 <div class="row">
                     <div class="col">
-                        <span class="fa fa-3x fa-envelope"></span>
+                        <span class="fa fa-2x fa-envelope"></span>
                     </div>
                     <div class="col">
-                        <span class="fa fa-3x fa-instagram"></span>
+                        <span class="fa fa-2x fa-instagram"></span>
                     </div>
                     <div class="col">
-                        <span class="fa fa-3x fa-twitter"></span></div>
+                        <span class="fa fa-2x fa-twitter"></span></div>
                     <!--
 <div class="col">
     <span class="fa fa-3x fa-facebook-official"></span>
 </div>
 -->
                     <div class="col">
-                        <span class="fa fa-3x fa-youtube-play"></span></div>
+                        <span class="fa fa-2x fa-youtube-play"></span></div>
                 </div>
             </div>
 
@@ -600,23 +709,23 @@
                 $("#myInput").focus();
             });
             /*
-                $('#sidebarCollapse .active').on('click', function() {
-                    // hide sidebar
-                    $('#sidebar').removeClass('active');
-                    // hide overlay
-                    $('.overlay').removeClass('active');
-                });
+                        $('#sidebarCollapse .active').on('click', function() {
+                            // hide sidebar
+                            $('#sidebar').removeClass('active');
+                            // hide overlay
+                            $('.overlay').removeClass('active');
+                        });
             
 
-                $('#sidebarCollapse').on('click', function() {
-                    // open sidebar 
-                    $('#sidebar').addClass('active');
-                    // fade in the overlay 
-                    $('.overlay').addClass('active');
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                });
-                */
+                        $('#sidebarCollapse').on('click', function() {
+                            // open sidebar 
+                            $('#sidebar').addClass('active');
+                            // fade in the overlay 
+                            $('.overlay').addClass('active');
+                            $('.collapse.in').toggleClass('in');
+                            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                        });
+                        */
         });
 
     </script>
