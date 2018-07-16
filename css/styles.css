@@ -31,7 +31,7 @@
     #category-business .card-img,
     #category-environment .card-img {
         /*        background: white;*/
-        content: url(/img/whiteimg.png);
+        content: url(../img/whiteimg.png);
         /*        background-color: white;*/
     }
     /* Setting the colors */
@@ -131,13 +131,13 @@
     }
     
     .navbar {
-        padding: 15px 10px;
+        padding: 10px 10px;
         background: #fff;
         border: none;
         border-radius: 0;
-        width: 100vw;
         z-index: 99999
     }
+    /*width: 100vw;*/
     
     .navbar-btn {
         box-shadow: none;
@@ -315,9 +315,8 @@
     }
     
     #sidebarCollapse span {
-        width: 80%;
+        width: 100%;
         height: 2px;
-        margin: 0 auto;
         display: block;
         background: #555;
         transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
@@ -325,19 +324,23 @@
     }
     
     #sidebarCollapse span:first-of-type {
+        width: 100%;
         transform: rotate(45deg) translate(2px, 2px);
     }
     
     #sidebarCollapse span:nth-of-type(2) {
+        width: 80%;
         opacity: 0;
     }
     
     #sidebarCollapse span:last-of-type {
+        width: 70%;
         transform: rotate(-45deg) translate(1px, -1px);
     }
     
     #sidebarCollapse.active span {
         transform: none;
+        width: 100%;
         opacity: 1;
         margin: 5px auto;
     }
@@ -345,7 +348,7 @@
     MEDIAQUERIES
 ----------------------------------------------------- */
     
-    @media (max-width: 768px) {
+    @media (max-width: 1768px) {
         #sidebar {
             margin-left: -250px;
             transform: rotateY(90deg);
