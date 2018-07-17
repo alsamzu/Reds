@@ -584,12 +584,24 @@ z-index: 99999
     margin-bottom: 10px;
 }
 
-.card-body h4 {
+#most-read div div:nth-child(odd) .card .card-img-overlay {
+    background: rgba( 0, 0, 0, 0.3);
+}
+
+#most-read div div:nth-child(odd) .card .card-img-overlay h5,
+#most-read div div:nth-child(odd) .card .card-img-overlay p,
+#most-read div div:nth-child(odd) .card .card-img-overlay .float-right {
+    color: white;
+}
+
+.card-body h4,
+.card-img-overlay h4 {
     font-size: 16px;
     font-weight: bold;
 }
 
-.card-body p {
+.card-body p,
+.card-img-overlay p {
     font-size: 12px;
 }
 
