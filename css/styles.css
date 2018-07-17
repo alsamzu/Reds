@@ -454,12 +454,17 @@ z-index: 99999
 }
 
 #picks {
-    padding: .3rem;
+    padding-left: .3rem;
     background: #fff;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: -0.5rem;
 }
 
 #recent {
-    padding: .3rem;
+    padding-left: .3rem;
+    margin-left: -0.5rem;
+    margin-top: 0;
 }
 
 
@@ -625,10 +630,13 @@ z-index: 99999
     -webkit-backface-visibility: visible;
     transition: opacity 200ms ease;
     border-radius: 8px;
+    margin-bottom: 0;
 }
 
 #slider-main .jumbotron {
     border-radius: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -683,6 +691,8 @@ z-index: 99999
 #slider-main slider-item-content {
     background-size: 100% 300%;
     background-size: contain background-position: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 #jumbo {
