@@ -27,8 +27,9 @@ body {
 
 /* Remove all the background */
 
-#category-family .card-img,
+
 #category-education .card-img,
+#category-family .card-img,
 #category-law .card-img,
 #category-science .card-img,
 #category-rights .card-img,
@@ -465,6 +466,7 @@ z-index: 99999
     padding-left: .3rem;
     margin-left: -0.5rem;
     margin-top: 0;
+    margin-bottom: 0;
 }
 #categories{
  padding-left: .3rem;
@@ -481,9 +483,9 @@ z-index: 99999
 
 .cardmain {
     width: 10rem;
-    height: 6.5rem;
+    height: 7rem;
     border-radius: 6px;
-    margin-right: 5px;
+    margin-right: .4rem;
     position: relative;
     padding: 1.5rem .5rem 5rem;
     overflow: hidden;
@@ -497,8 +499,11 @@ z-index: 99999
     position: relative;
 }
 
+
+
 #fas {
     position: absolute;
+
     top: 3px;
     right: 3px;
     font-size: 1.2rem;
@@ -729,7 +734,7 @@ z-index: 99999
 
 .modal-backdrop {
     /*    bug fix - no overlay */
-    display: none;
+    display: block;
     /*    z-index: 1;*/
 }
 
