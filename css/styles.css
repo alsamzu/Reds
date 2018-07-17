@@ -601,8 +601,7 @@ z-index: 99999
 /*======== CUSTOM CAROUSEL BUTTONS by Victor ===============*/
 
 .owl-theme .overlay {
-    background: rgba(255, 255, 255, 0.5);
-    ;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -637,6 +636,10 @@ z-index: 99999
     border-radius: 0;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+}
+
+.my-overlay {
+    background: rgba(0, 255, 255, 0.9);
 }
 
 
@@ -676,6 +679,7 @@ z-index: 99999
     position: relative;
     z-index: 99;
     margin-top: -55px;
+    padding-bottom: 30px;
 }
 
 #slider-main .owl-stage {
@@ -688,11 +692,17 @@ z-index: 99999
     background: #FF0000;
 }
 
-#slider-main slider-item-content {
+#slider-main .slider-item-content {
+    background: rgba(0, 255, 255, 0.9);
     background-size: 100% 300%;
-    background-size: contain background-position: center;
+    background-size: contain;
+    background-position: center;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+#slider-main .jumbotron {
+    background: rgba(0, 0, 0, 0.3);
 }
 
 #jumbo {
