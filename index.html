@@ -32,7 +32,7 @@
 
 <body>
     <!--========== NAVIGATION SECTION ========================== -->
-    <nav class="row navbar fixed-top navbar-light navbar-expand-lg bg-faded">
+    <nav class="row navbar fixed-top navbar-light navbar-expand-lg bg-faded pb-1">
         <div class="col-2 mt-1 ml-2">
             <button type="button" id="sidebarCollapse" class="navbar-btn">
 <span></span>
@@ -40,17 +40,17 @@
                         <span></span>
                     </button>
         </div>
-        <div class="col-2 pb-4 mr-2">
+        <div class="col-2  mt-1 ml-2">
             <!-- Search Icon-->
-            <a href="#" id="search" data-toggle="modal" data-target="#exampleModal">
-                <i class="fa fa-1x fa-search"></i>
+            <a href="#" id="search" data-toggle="modal" data-target="#SearchModal">
+                <i class="fa fa-2x fa-search"></i>
             </a>
             <!-- Search icon End-->
         </div>
         <div class="col-4">
             <!-- Reds Logo-->
             <a class="navbar-brand" href="#">
-                <img src="img/logo.jpg" width="40" height="40" alt="">
+                <img src="img/logo.jpg" width="50" height="35" alt="">
             </a>
             <!--  Logo End-->
         </div>
@@ -59,7 +59,7 @@
             <!-- Dropdown-->
             <div class="btn-group  float-right">
                 <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="drop">
-                    <img src="img/eng.jpeg" width="25" height="25" alt="">EN </button>
+                    <img src="img/eng.jpeg" width="25" height="20" alt=""> EN </button>
                 <div class="dropdown-menu pull-left">
                     <a class="dropdown-item" href="#">English
                         <img src="img/eng.jpeg" width="20" height="20" alt="">
@@ -73,8 +73,31 @@
             </div>
         </div>
     </nav>
-
     <!-- End of Navbar-->
+
+    <!--============== SEARCH Modal ============================== -->
+    <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <!--        data-backdrop="false"-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="margin-top:200px;">
+                <div class="modal-headerzz">
+                    <!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+
+                </div>
+                <div class="modal-body">
+
+                    <!--                    <h1>Search</h1>-->
+                    <form class="navbar-form " role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control fa fa-search" placeholder="Search">
+                        </div>
+                        <!--                        <button type="submit" class="btn btn-default">Submit</button>-->
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="wrapper">
@@ -182,62 +205,7 @@
             </div>
 
 
-            <!--============== SEARCH Modal ============================== -->
-            <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
-                        </div>
-                        <div class="modal-body">
-
-                            <h1>Search</h1>
-                            <form class="navbar-form " role="search">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Search">
-                                </div>
-                                <button type="submit" class="btn btn-default">Submit</button>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--            ====================== ANOTHER MODAL ====================-->
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                        </div>
-                        <div class="modal-body">
-                            <div>
-
-                                <h1>Search</h1>
-                                <form class="navbar-form " role="search">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Search">
-                                    </div>
-                                    <button type="submit" class="btn btn-default">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--            ====================== END OF ANOTHER MODAL ====================-->
 
             <!--============== OUR PICKS SECTION ==========-->
             <div class="row section " id="picks">
@@ -686,6 +654,10 @@
                 $(this).toggleClass('active');
                 $('.overlay').toggleClass('active');
             });
+
+            // ========= MODAL FIX =======
+            //            showEditor() { // $("#EditModal").modal("show"); // $("#EditModal").appendTo("body"); // }
+
 
             // CLICKING ON SIDE BAR LINKS
             $('#sidebar>ul>li').on('click', function() {
