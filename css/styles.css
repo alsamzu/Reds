@@ -17,66 +17,6 @@ body {
 }
 
 
-/* =============== CATEGORIES  ==========*/
-
-#categories table {
-    /*===== make the section to center =====*/
-    margin: auto;
-}
-
-
-/* Remove all the background */
-
-#category-education .card-img,
-#category-family .card-img,
-#category-law .card-img,
-#category-science .card-img,
-#category-rights .card-img,
-#category-culture .card-img,
-#category-technology .card-img,
-#category-business .card-img,
-#category-environment .card-img {
-    /*        background: white;*/
-    content: url(../img/whiteimg.png);
-    /*        background-color: white;*/
-}
-
-
-/* Setting the colors */
-
-#category-family * {
-    color: #DF4B7A;
-}
-
-#category-education * {
-    color: #638894;
-}
-
-#category-law * {
-    color: #D65D00;
-}
-
-#category-science * {
-    color: #AF5EB5;
-}
-
-#category-rights * {
-    color: #E22028;
-}
-
-#category-environment * {
-    color: #6DB230;
-}
-
-#category-technology * {
-    color: #2D7CB8
-}
-
-#category-culture * {
-    color: 13c4a4;
-}
-
-
 /*======== LOAD MORE SECTION ===========*/
 
 #load-more {
@@ -642,6 +582,87 @@ z-index: 99999
 }
 
 
+/* =============== CATEGORIES  ==========*/
+
+#categories table {
+    /*===== make the section to center =====*/
+    margin: auto;
+}
+
+#categories .card {
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 0px;
+    box-shadow: 0px 0px 0px #888888
+}
+
+#categories .card-body {
+    padding: 0rem;
+}
+
+#categories.col-sm-3,
+#categories.col3 {
+    padding: 0px;
+}
+
+#categories .card .active .card-body {
+    border-bottom-color: black;
+    border-bottom-width: 5px;
+}
+
+
+/* Remove all the background */
+
+#category-education .card-img,
+#category-family .card-img,
+#category-law .card-img,
+#category-science .card-img,
+#category-rights .card-img,
+#category-culture .card-img,
+#category-technology .card-img,
+#category-business .card-img,
+#category-environment .card-img {
+    /*        background: white;*/
+    /*    content: url(../img/whiteimg.png);*/
+    /*        background-color: white;*/
+}
+
+
+/* Setting the colors */
+
+#category-family * {
+    color: #DF4B7A;
+}
+
+#category-education * {
+    color: #638894;
+}
+
+#category-law * {
+    color: #D65D00;
+}
+
+#category-science * {
+    color: #AF5EB5;
+}
+
+#category-rights * {
+    color: #E22028;
+}
+
+#category-environment * {
+    color: #6DB230;
+}
+
+#category-technology * {
+    color: #2D7CB8
+}
+
+#category-culture * {
+    color: 13c4a4;
+}
+
+
 /*======== CUSTOM CAROUSEL BUTTONS by Victor ===============*/
 
 .owl-theme .overlay {
@@ -682,6 +703,20 @@ z-index: 99999
     margin-bottom: 1rem;
 }
 
+
+/* the slides */
+
+.slick-slide {
+    margin-left: 27px;
+}
+
+
+/* the parent */
+
+.slick-list {
+    margin-left: -27px;
+}
+
 .my-overlay {
     background: rgba(0, 255, 255, 0.9);
 }
@@ -692,6 +727,12 @@ z-index: 99999
         top: -20px;
     } 
 */
+
+.btn-lg,
+.btn-grp-lg>.btn,
+{
+    border-radius: 0rem;
+}
 
 
 /* ======== MAIN SLIDER STYLING ============ */
