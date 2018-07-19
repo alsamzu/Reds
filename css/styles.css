@@ -59,6 +59,10 @@ body {
 #drop {
     background: white;
 }
+#drp{
+    padding-left: 0.5rem;
+}
+
 
 h3 {
     /*    font-weight: bold;*/
