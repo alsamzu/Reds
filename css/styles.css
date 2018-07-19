@@ -31,7 +31,7 @@ body {
 /*======= More-in-family =========*/
 
 #more-in-family .card {
-    margin-bottom: 10px;
+/*    margin-bottom: 10px;*/
 }
 
 
@@ -447,7 +447,7 @@ z-index: 99999
 }
 
 .cardmain {
-    width: 12rem;
+    width: 11rem;
     height: 7rem;
     border-radius: 6px;
     margin-right: .4rem;
@@ -457,6 +457,11 @@ z-index: 99999
     font-size: 12px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .20);
     border: solid 2px rgba(0, 0, 0, .04);
+}
+#img {
+   border-radius: 6px;
+    margin-left: .4rem;
+/*     margin-right: .6rem;*/
 }
 
 .cardmain * {
