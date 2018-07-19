@@ -22,6 +22,7 @@ body {
 #load-more {
     color: red;
     text-align: center;
+    padding-top: 0;
 }
 
 
