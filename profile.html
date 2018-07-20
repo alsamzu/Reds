@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css" />
+
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontstest.css">
+
+    <!--    Google Fonts-->
+
+</head>
+<body>
+
+  <!--========== NAVIGATION SECTION ========================== -->
+    <nav class="row navbar fixed-top navbar-light navbar-expand-lg bg-faded pb-1">
+        <div class="col-2 mt-1 ml-2">
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+        </div>
+        <div class="col-2  mt-1 ">
+            <!-- Search Icon-->
+            <a href="#" id="search" data-toggle="modal" data-target="#SearchModal">
+                <i class="fa fa-search"></i>
+            </a>
+            <!-- Search icon End-->
+        </div>
+        <div class="col-4">
+            <!-- Reds Logo-->
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" width="50" height="35" alt="">
+            </a>
+            <!--  Logo End-->
+        </div>
+
+        <div class="col-3 mr-auto" >
+            <!-- Dropdown-->
+            <div class="btn-group  float-left">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="drop">
+                    <img src="img/eng.jpeg" width="25" height="20" alt=""> EN </button>
+                <div class="dropdown-menu pull-left" id="drps">
+                    <a class="dropdown-item" href="#" id="drp">English
+                        <img src="img/eng.jpeg" width="20" height="20" alt="">
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" id="drp">French
+                        <img src="img/france.png" width="20" height="20" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar-->
+
+    <!--============== SEARCH Modal ============================== -->
+    <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <!--        data-backdrop="false"-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="margin-top:200px;">
+                <div class="modal-headerzz">
+                    <!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+
+                </div>
+                <div class="modal-body">
+
+                    <!--                    <h1>Search</h1>-->
+                    <form class="navbar-form " role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control fa fa-search" placeholder="Search">
+                        </div>
+                        <!--                        <button type="submit" class="btn btn-default">Submit</button>-->
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper mt-5 ml-3">
+         <nav id="sidebar">
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#"><i class="fa fa-globe pr-2" style="color:#78909c"></i>Education</a>
+                </li>
+                <li>
+                    <a href="./categories.html"><i class="fa fa-globe pr-2" style="color:#ff4081"></i>Home & Family</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe pr-2" style="color:#ba68c8"></i>Science</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe pr-2" style="color:#f44336"></i>Human Rights</a>
+
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe pr-2" style="color:#ff6f00"></i>Law & Government</a>
+
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe pr-2" style="color:#00bfa5"></i>Culture</a>
+
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe pr-2" style="color:#1565c0"></i>Technology</a>
+
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe pr-2" style="color:#b71c1c"></i>Business</a>
+
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe pr-2" style="color:#00c853"></i>Environment</a>
+
+                </li>
+
+                <li id="prof">
+                    <a href="#"><img src="img/profile.jpg" class="mr-2" width=30 height=30 style="border-radius:100%;">
+                        <!--                        <i class="fa fa-globe pr-2" style="color:#607d8b"></i>-->
+                        Profile</a>
+
+
+
+                </li>
+                <li>
+                    <a href="#">About us</a>
+
+                </li>
+                <li>
+                    <a href="#">Work with us</a>
+
+                </li>
+            </ul>
+
+
+        </nav>
+
+            <!--        Profile-->
+            <div class="container">
+                <div class="row mt-5 pl-2 mr-2 pb-2" style="border-bottom: 1px solid red">
+                    <div class="col-3">
+                        <img src="img/profile.jpg" alt="Profile"  style="border-radius: 50%; width: 25vw"/>
+                    </div>
+                    <div class="col-5 mt-4 text-center">
+                        <h5> John Doe</h5>
+                        <h5 style="color: red; font-weight: bold">Edit Profile</h5>
+
+                    </div>
+
+                </div>
+
+                <div class="row mt-3 pl-2 mr-2 pb-2" style="border-bottom: 1px solid red">
+                   <div class="col-12">
+                       <h4 style="color:red; font-weight: bold">
+                           My Profile
+                       </h4>
+                   </div>
+                   <div class="col-12 mt-3" >
+
+                      <p style="font-weight: bold">
+                       <span class="pr-2" style="color: #616161" ><i class="fa fa-bookmark"></i></span>
+                        Saved Articles</p>
+
+                   </div>
+                   <div class="col-12" style="display: block;font-weight: bold">
+                      <p style="font-weight: bold">Recommended for you</p>
+
+                   </div>
+                   <div class="col-12" style="display: block;font-weight: bold">
+                      <p style="font-weight: bold">Favourites</p>
+
+                   </div>
+                   <div class="col-12" style="display: block;font-weight: bold">
+                      <p style="font-weight: bold">Edit Profile</p>
+
+                   </div>
+
+
+                </div>
+
+
+                 <div class="row mt-3 pl-2 mr-2 pb-2">
+                   <div class="col-12">
+                       <h4 style="color:red; font-weight: bold">
+                           Sign Out
+                       </h4>
+                   </div>
+
+            </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+     <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+                $('.overlay').toggleClass('active');
+            });
+
+            // ========= MODAL FIX =======
+            //            showEditor() { // $("#EditModal").modal("show"); // $("#EditModal").appendTo("body"); // }
+
+
+            // CLICKING ON SIDE BAR LINKS
+            $('#sidebar>ul>li').on('click', function() {
+                console.log('You clicked A HREF');
+                $('#sidebar').removeClass('active');
+                $('#sidebarCollapse').toggleClass('active');
+
+            });
+
+            //               $("#sidebar").mCustomScrollbar({ // theme: "minimal" // });
+
+            $('#dismiss, .overlay').on('click', function() {
+                // hide sidebar
+                $('#sidebar').removeClass('active');
+                // hide overlay
+                $('.overlay').removeClass('active');
+            });
+
+            // =========== SEARCH BUTTON =====================
+            $("#search").click(function() {
+                $("#myInput").focus();
+            });
+
+        });
+
+    </script>
+
+
+</body>
+</html>
